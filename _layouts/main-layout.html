@@ -1,5 +1,6 @@
 ---
 layout: main-layout
+title-image: SimpleVM_New.svg
 ---
 <html>
 <head>
@@ -14,6 +15,13 @@ layout: main-layout
 </head>
 
 <body>
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/{{ page.title-image }}" alt="" width="30" height="24" class="d-inline-block align-text-top">
+        </a>
+    </div>
+</nav>
 {{ content }}
 </body>
 </html>
