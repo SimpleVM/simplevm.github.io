@@ -3,3 +3,6 @@ plugins:
   - jekyll-remote-theme
 title: SimpleVM
 description: Streamlining the launch of Virtual Machines.
+sass:
+  sass_dir: _sass
+
