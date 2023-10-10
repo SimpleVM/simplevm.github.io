@@ -1,0 +1,35 @@
+---
+---
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+  font-family: 'Saira', sans-serif;
+}
+
+
+.top-section {
+  align-content: center;
+  margin: auto;
+}
+.title-image-section {
+  max-width: 300px;
+}
+.animated-background {
+  background: linear-gradient(-45deg, #144C4D, #34C7C9, #24888A, #BAFCFC);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
