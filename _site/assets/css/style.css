@@ -9,7 +9,7 @@ body {
 }
 
 .title-image-section {
-  max-width: 300px;
+  max-width: 600px;
   margin: auto;
   align-content: center;
 }
@@ -23,11 +23,39 @@ body {
   border-radius: 10px !important;
 }
 
+.color-shadowed {
+  text-shadow: 2px 2px 20px #144C4D;
+}
+
+.feature-card:hover {
+  background: linear-gradient(20deg, #144C4D, #34C7C9, #24888A);
+  background-size: 500% 200%;
+  animation: gradient 30s ease infinite;
+  box-shadow: #24888A 10px 10px 20px;
+  text-shadow: 2px 2px 20px #144C4D;
+  color: #fff;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px; /* Adjust the height and color as needed */
+  background: linear-gradient(90deg, #144C4D, #34C7C9);
+  width: 0; /* Initial width is 0 */
+  transition: width 0.2s; /* Add a smooth transition effect for width changes */
+}
+
 .animated-background {
   background: linear-gradient(-55deg, #BAFCFC, #144C4D, #34C7C9, #24888A);
   background-size: 400% 400%;
   animation: gradient 30s ease infinite;
-  height: 100vh;
+  padding-bottom: 30px;
+}
+
+.white-section {
+  background: #fff;
+  padding: 40px;
 }
 
 @keyframes gradient {

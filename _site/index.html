@@ -17,38 +17,39 @@
             <img src="assets/images/SimpleVM_New.svg" alt="" width="120" height="40" class="d-inline-block align-text-top">
         </a>
     </div>
+    <div class="scroll-indicator" id="scroll-indicator"></div>
 </nav>
 <section class="top-section text-center p-2 my-3">
     <div class="title-image-section p-3">
         <img src="assets/images/SimpleVM_New.svg" alt="SimpleVM">
     </div>
-    <h5 class="p-3">Streamlining the launch of Virtual Machines</h5>
+    <h4 class="p-3">Streamlining the launch of Virtual Machines</h4>
     <a class="mb-3 btn btn-outline-dark" href="mailto:cloud@denbi.de" rel="norefferer noopener">
         Contact Us
     </a>
 </section>
 <section class="animated-background">
     <div class="p-3">
-        <h3 class="text-white text-center my-4">Key features</h4>
+        <h2 class="text-white text-center my-4 color-shadowed">Key features</h2>
     </div>
-    <div class="p-2  main-slogan">
+    <div class="p-2 text-white text-center color-shadowed">
         <p class="fw-bolder text-white p-2">
             SimpleVM makes it possible to bring cloud computing to everyone.
             Machines can be easily started and managed with just a few clicks, regardless of the user's experience.
         </p>
     </div>
     <div class="my-3">
-        <div class="row mx-5">
-            <div class="col-md-4">
-                <div class="card feature-card h-100 m-2">
+        <div class="row d-flex mx-5">
+            <div class="col-lg-4 d-flex align-items-stretch">
+                <div class="card feature-card flex-fill m-3">
                     <div class="card-body">
                         <h5 class="card-title">Streamlined and intuitive</h6>
                         <p class="card-text">SimpleVM eliminates the complex configurations that are necessary for the use of cloud computing. Users can access common functionalities directly and easily. For example, starting machines becomes a breeze.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card feature-card h-100 m-2">
+            <div class="col-lg-4 d-flex align-items-stretch">
+                <div class="card feature-card flex-fill m-3">
                     <div class="card-body">
                     <h5 class="card-title">Tools and apps with a single click</h6>
                     <p class="card-text">In addition to starting machines or entire clusters, SimpleVM also enables the launch of browser based research environments in the cloud. Tools such as RStudio® can be accessed in the browser within a matter of seconds. The same applies to installing packages that are available via Anaconda®.
@@ -56,8 +57,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card feature-card h-100 m-2">
+            <div class="col-lg-4 d-flex align-items-stretch">
+                <div class="card feature-card flex-fill m-3">
                     <div class="card-body">
                     <h5 class="card-title">Workshop management</h6>
                     <p class="card-text">SimpleVM enables larger groups of participants to easily take part in workshops in a cloud computing context. Tutors can quickly and easily start virtual machines for workshop participants, on which the tools needed for the course are already pre-installed.</p>
@@ -67,7 +68,45 @@
         </div>
     </div>
 </section>
+<section class="white-section">
+    <div class="text-center">
+        <h2 class="p-3">How it works</h2>
+        <div class="p-3">
+<p>SimpleVM can be understood as a wrapper around OpenStack®. All that is needed is access to a pool project in OpenStack®.</p>
+    <p>SimpleVM handles the communication between OpenStack® and the user and provides all the necessary information and control options for VMs.</p>
+</div>
+    </div>
+</section>
 
+<section class="white-section">
+    <div class="text-center">
+        <h2 class="p-3">Users and Applications</h2>
+        <div class="p-3">
+<h5 class="mb-4">de.NBI Cloud</h5>
+    <p>SimpleVM has been used for many years as a dedicated project type for cloud projects within the de.NBI Cloud.
+        It is primarily aimed at users from the life sciences who want to use computational resources for scientific work quickly and easily.</p>
+        <p>More experienced users also frequently use this project type because of the simple setup of clusters and browser-based reseach environments.</p>
+    <a class="btn btn-outline-dark m-2" target="_blank" rel="norefferer noopener" href="https://cloud.denbi.de">Learn more</a>
+</div>
+    </div>
+</section>
+<div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <span class="mb-3 mb-md-0 text-muted">© 2023 de.NBI</span>
+      </div>
+    </footer>
+  </div>
 
 </body>
+
+<script>
+    window.addEventListener('scroll', function() {
+    // Calculate the percentage of how far the user has scrolled
+    const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+    // Update the width of the scroll indicator based on the scroll percentage
+    document.getElementById('scroll-indicator').style.width = `${scrollPercentage}%`;
+});
+</script>
+
 </html>
