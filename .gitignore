@@ -1,0 +1,50 @@
+# ----------------------------
+
+# Jekyll / GitHub Pages
+
+# ----------------------------
+
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# ----------------------------
+
+# Ruby / Bundler
+
+# ----------------------------
+
+.bundle/
+vendor/
+Gemfile.lock
+
+# ----------------------------
+
+# Node (if using npm tools)
+
+# ----------------------------
+
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# ----------------------------
+
+# OS / Editor junk
+
+# ----------------------------
+
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ----------------------------
+
+# Logs
+
+# ----------------------------
+
+*.log
+
