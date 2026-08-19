@@ -121,3 +121,13 @@ body {
         background-position: 0% 50%;
     }
 }
+
+.a-link {
+    color: #144C4D;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.a-link:hover {
+    color: white;
+    box-shadow: inset 100px 0 0 0 #144C4D;
+}
